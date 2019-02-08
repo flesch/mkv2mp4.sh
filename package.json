@@ -1,0 +1,46 @@
+{
+  "name": "mkv2mp4",
+  "description": "Convert a directory of Matroska MKV files to iTunes compatible MP4 format for Airplay streaming on AppleTV.",
+  "homepage": "https://github.com/flesch/mkv2mp4.sh",
+  "version": "1.0.0",
+  "main": "./bin/mkv2mp4.sh",
+  "bin": {
+    "mkv2mp4": "./bin/mkv2mp4.sh"
+  },
+  "author": {
+    "email": "john@fles.ch",
+    "name": "John Flesch",
+    "url": "https://fles.ch/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flesch/mkv2mp4.sh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flesch/mkv2mp4.sh/issues"
+  },
+  "keywords": [
+    "airplay",
+    "appletv",
+    "codec",
+    "convert",
+    "encode",
+    "format",
+    "itunes",
+    "matroska",
+    "mkv",
+    "mp4"
+  ],
+  "devDependencies": {
+    "chokidar-cli": "^1.2.1"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "shellcheck": "shellcheck bin/mkv2mp4.sh",
+    "watch": "npm link && chokidar bin/mkv2mp4.sh -c \"npm link\""
+  },
+  "license": "MIT",
+  "public": true
+}
